@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>IP ADDRESS TRACKER</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main class="container">
+            <div class="hero-section">
+                <h1>IP Address Tracker</h1>
+                <form class="textform">
+                    <input class="textbox" type="text" placeholder="Enter a domain">
+                    <button class="btn" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>
+                    </button>
+                </form>
+            </div>
+            <div class="map-content-info">
+                <div class="ip-address">
+                    <p>IP ADDRESS</p>
+                    <h1 id="ip-address"></h1>
+                </div>
+                <div class="location">
+                    <p>LOCATION</p>
+                    <h1 id="location"></h1>
+                </div>
+                <div class="timezone">
+                    <p>TIMEZONE</p>
+                    <h1 id="timezone"></h1>
+                </div>
+                <div class="isp">
+                    <p>ISP</p>
+                    <h1 id="isp"></h1>
+                </div>
+            </div>
+            <div class="map-content">
+                <div id="map">
+        
+                </div>
+            </div>
+        </main>
+        <script src="./ipaddress.js" async defer></script>
+    </body>
+</html>
